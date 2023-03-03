@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: conic-gradient(rgb(77, 71, 71), lightblue, rgb(0, 117, 10));
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            margin: 50px;
+            justify-items: center;
+        }
+
+        button {
+            height: 40px;
+            width: 120px;
+            background: transparent;
+            color: black;
+            border: 2px solid black;
+            font-weight: 700;
+            transition: 1s all ease;
+        }
+
+        .btn1:hover {
+            transform: rotate(360deg);
+        }
+
+        .btn2:hover {
+            transform: rotateX(180deg);
+        }
+
+        .btn3:hover {
+            transform: rotateY(180deg);
+        }
+
+        .btn4:hover {
+            transform: scale(1.2);
+        }
+
+
+        .btn5:hover {
+            transform: scaleX(1.2);
+        }
+
+
+        .btn6:hover {
+            transform: scaleY(1.2);
+        }
+
+        .btn7:hover {
+            transform: skewX(10deg);
+        }
+
+        .btn8:hover {
+            transform: translateX(15px);
+        }
+
+        .btn9:hover {
+            transform: scaleY(1.2);
+        }
+
+        .btn10:hover {
+            border-top: 10px solid black;
+            border-bottom: 10px solid black;
+        }
+
+        .btn11:hover {
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            border-left: 2px solid black;
+            border-right: 2px solid transparent;
+            animation: button 2s ease infinite;
+        }
+
+        @keyframes button {
+            0% {
+                transform: scale(0deg);
+            }
+
+            25% {
+                transform: scale(25deg);
+            }
+
+            50% {
+                transform: scale(50deg)
+            }
+
+            100% {
+                transform: ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub">
+            <button class="btn1">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn2">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn3">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn4">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn5">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn6">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn7">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn8">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn9">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn10">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn11">Click Here</button>
+        </div>
+        <div class="sub">
+            <button class="btn12">Click Here</button>
+        </div>
+    </div>
+</body>
+
+</html>

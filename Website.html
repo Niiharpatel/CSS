@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(img9.jpg);
+
+        }
+
+        .main {
+            width: 100px;
+        }
+
+        .nav {
+            top: 5px;
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0px;
+            align-items: center;
+            font-family: sans-serif;
+
+        }
+
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 70px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav .logo {
+            font-size: 40px;
+            transition: 1s all ease-in-out;
+            margin-top: -15px
+        }
+
+        .nam1 {
+            color: white;
+            cursor: pointer;
+            font-family: cursive;
+
+        }
+
+        .nam2 {
+            color: orangered;
+            cursor: pointer;
+            font-family: cursive;
+            text-align: start;
+
+        }
+
+        .logo:hover {
+            transform: scale(1.5) rotateX(360deg);
+        }
+
+        .list ul li a {
+
+            color: white;
+        }
+
+        .list ul {
+            gap: 90px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .search input {
+            width: 150px;
+            height: 33px;
+            padding-left: 5px;
+            border-radius: 5px 0px 0px 5px;
+            border: 1px solid orangered;
+            border-right: transparent;
+            background-color: transparent;
+            cursor: text;
+            color: white;
+            outline: none;
+
+        }
+
+
+        .search .btn1 {
+            height: 35px;
+            width: 87px;
+            border-radius: 0px 5px 5px 0px;
+            border: none;
+            background-color: orangered;
+            color: white;
+            font-weight: bolder;
+            cursor: pointer;
+
+        }
+
+        .search input:focus {
+            outline-style: none;
+        }
+
+        .search input::placeholder {
+            color: white;
+        }
+
+        .search .btn1:hover {
+            border: 2px solid orangered;
+        }
+
+        .main {
+            position: absolute;
+            top: 170px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 100px;
+
+        }
+
+        .box1 {
+            width: 700px;
+            height: 400px;
+            background-color: transparent;
+            border: none;
+            margin-left: 50px;
+
+        }
+
+        .box2 {
+            width: 350px;
+            height: 365px;
+            background-color: rgba(0, 0, 0, 0.788);
+            border: none;
+            border-radius: 10px;
+            width: fit-content;
+            padding: 10px 20px;
+            margin-left: 100px;
+            box-shadow: 0px 0px 3px 1px white;
+
+        }
+
+        .box1 h1,
+        h3 {
+            color: white;
+            font-size: 40px;
+        }
+
+        .box1 h2 {
+            font-size: 60px;
+            color: orangered;
+        }
+
+        .box1 pre {
+            color: white;
+            font-weight: bold;
+            font-family: auto;
+            font-size: 22px;
+            margin-bottom: 15px;
+            padding: 5px 0px 5px 0px;
+            line-height: 35px;
+        }
+
+        .box1 .btn2 {
+            width: 120px;
+            height: 30px;
+            background-color: orange;
+            color: black;
+            border-radius: 5px;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 1s all ease;
+        }
+
+        .btn2:hover {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .in1::placeholder {
+
+            color: orangered;
+            border-radius: 10px;
+            font-size: 30px;
+        }
+
+
+
+        .in1 {
+            width: 300px;
+            height: 40px;
+            background-color: white;
+            border-radius: 12px;
+            border: none;
+            font-weight: bolder;
+            margin-top: 10px;
+            padding-top: 8px;
+            text-align: center;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: auto;
+        }
+
+        .in1:focus {
+            display: none;
+
+        }
+
+        .in2 {
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            width: 300px;
+            height: 30px;
+            border-color: grey;
+            background-color: transparent;
+            margin-top: 30px;
+            color: white;
+
+        }
+
+        .box2 .in2:focus {
+            outline-style: none;
+            font-size: 15px;
+
+        }
+
+        .in2::placeholder {
+            color: white;
+            font-size: 15px;
+            padding-left: 5px;
+        }
+
+
+        .in3 {
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            width: 300px;
+            background-color: transparent;
+            border-color: grey;
+            color: white;
+            height: 30px;
+            margin-top: 30px;
+        }
+
+        .in3::placeholder {
+            color: white;
+            font-size: 15px;
+            padding-left: 5px;
+        }
+
+        .in3:focus {
+            outline-style: none;
+            font-size: 15px;
+        }
+
+        .btn3 {
+            width: 220px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: orange;
+            border: none;
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 1s all ease;
+            font-family: auto;
+
+        }
+
+        .btn3:hover {
+            width: 120px;
+            height: 30px;
+
+
+        }
+
+        .content {
+            width: 100%;
+            height: 390px;
+            margin: 0px auto;
+            text-align: center;
+
+        }
+
+        .box2 .content .p1 {
+            font-weight: 700;
+            padding: 15px 0px 0px 0px;
+            color: white;
+        }
+
+        .box2 .content .p2 {
+            font-weight: 700;
+            color: white;
+        }
+
+        .box2 .content .p3 {
+            font-weight: 700;
+            padding: 10px 0px 20px 0px;
+            color: white;
+        }
+
+        .box2 .p2 .a1 {
+            color: orange;
+            font-size: medium;
+            padding: 0;
+
+        }
+
+        .box2 .content a {
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            padding-inline: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="nav">
+            <div class="logo">
+                <span class="nam1">Ni</span><span class="nam2">har</span></a>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">DESIGN</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="search">
+                    <input type="text" placeholder="Type Here"><button class="btn1">Search</button>
+                </div>
+            </form>
+        </div>
+
+    </header>
+
+    <div class="main">
+        <div class="box1">
+            <form action="">
+                <h1>Web Design &</h1>
+                <h2>Development</h2>
+                <h3>Course</h3>
+                <pre>Web Design is a specialization of the design stream. They also use HTML,
+CSS,WYSIWYG editing software,mark up validators etc.,
+to create design elements.</pre>
+                <button class="btn2">JOIN US</button>
+            </form>
+        </div>
+
+        <div class="box2">
+            <form action="">
+                <div class="content">
+                    <input type="text" placeholder="Login Here" class="in1">
+                    <input type="email" placeholder="Enter Email Here" class="in2">
+                    <input type="password" placeholder="Enter Password Here" class="in3" minlength="6">
+
+                    <button class="btn3">Login</button>
+
+                    <p class="p1">Don't have an account?</p>
+
+                    <p class="p2"><a href="" class="a1">Sign up</a> here</p>
+
+                    <p class="p3">Log in with</p>
+
+                    <a href="" class="fa-brands fa-facebook"></a>
+                    <a href="" class="fa-brands fa-instagram"></a>
+                    <a href="" class="fa-brands fa-twitter"></a>
+                    <a href="" class="fa-brands fa-skype"></a>
+                    <a href="" class="fa-brands fa-google"></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

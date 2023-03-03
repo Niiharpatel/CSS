@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../../img14.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .main {
+            width: 550px;
+            height: 620px;
+            box-shadow: 0px 0px 15px 1px black;
+            background-color: transparent;
+            margin: 20px auto;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            color: white;
+
+        }
+
+        .content {
+
+            display: grid;
+            justify-content: center;
+
+        }
+
+        .td1,
+        .td2,
+        .td3,
+        .td5,
+        .td6,
+        .td7,
+        .td8,
+        .td9,
+        .td10 {
+
+            text-align: right;
+            padding-right: 30px;
+            color: white;
+        }
+
+        .td4 {
+            text-align: center;
+            color: white;
+
+        }
+
+        .td11,
+        .td12 {
+            text-align: center;
+        }
+
+        .in1,
+        .in2,
+        .in3,
+        .in5,
+        .in7,
+        .in8,
+        .in9,
+        .in10 {
+            height: 25px;
+            width: 250px;
+            border-radius: 5px;
+            margin: 5px 0px;
+            border: 1px solid black;
+        }
+
+        .in6:focus {
+            accent-color: black;
+        }
+
+        .ss {
+            color: white;
+        }
+
+        .in4 {
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        button {
+            width: 120px;
+            height: 30px;
+            margin-top: 30px;
+            background-color: blue;
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+            border-radius: 5px;
+            transition: 1s all ease;
+
+        }
+
+        button:hover {
+            transform: scale(1.2);
+            background-color: transparent;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
+        <div class="main">
+            <!-- <div class="heading"> -->
+            <h1>Registration For Job</h1>
+            <!-- </div> -->
+
+            <div class="content">
+
+                <table>
+
+
+                    <!-- 1st row -->
+                    <tr>
+                        <td class="td1">First Name</td>
+                        <td> <input type="text" placeholder="Enter first name" class="in1"></td>
+                    </tr>
+
+                    <!-- 2nd row -->
+                    <tr>
+                        <td class="td2">Middle Name</td>
+                        <td><input type="text" placeholder="Enter Middle name" class="in2"></td>
+                    </tr>
+
+
+                    <!-- 3rd row -->
+                    <tr>
+                        <td class="td3">
+                            Last Name
+                        </td>
+                        <td><input type="text" placeholder="Enter last name" class="in3"></td>
+                    </tr>
+
+
+                    <!-- 4th row -->
+                    <tr>
+                        <td class="td4">
+                            Address
+                        </td>
+                        <td><textarea name="Address" id="" cols="30" rows="5" class="in4"></textarea></td>
+                    </tr>
+
+
+                    <!-- 5th row -->
+                    <tr>
+                        <td class="td5">Date Of Birth</td>
+                        <td><input type="date" class="in5"></td>
+                    </tr>
+
+
+                    <!-- 6th row -->
+                    <tr>
+                        <td class="td6">Gender</td>
+                        <td><input type="radio" name="Gender" class="in6"><span class="ss">Male</span> <input
+                                type="radio" name="Gender" id="" class="in6"><span class="ss">Female</span></td>
+                    </tr>
+
+
+                    <!-- 7th row -->
+                    <tr>
+                        <td class="td7">Experience</td>
+                        <td><select name="" id="" class="in7">
+                                <option value="">---Select---</option>
+                                <option value="">0.5 year</option>
+                                <option value="">1 year</option>
+                                <option value="">1.5 year</option>
+                                <option value="">2 year</option>
+                            </select></td>
+                    </tr>
+
+
+                    <!-- 8th row -->
+                    <tr>
+                        <td class="td8">
+                            Mobile No
+                        </td>
+                        <td><input type="text" placeholder="Enter Mobile No" maxlength="10" minlength="10" class="in8">
+                        </td>
+                    </tr>
+
+
+                    <!-- 9th row -->
+                    <tr>
+                        <td class="td9">
+                            Email Id
+                        </td>
+                        <td><input type="email" placeholder="Enter email" class="in9"></td>
+                    </tr>
+
+
+                    <!-- 10th row -->
+                    <tr>
+                        <td class="td10">
+                            Create Password
+                        </td>
+                        <td><input type="password" class="in10" placeholder="Enter Password"></td>
+                    </tr>
+
+
+                    <!-- 11th row -->
+                    <tr>
+                        <td class="td11" colspan="2">
+                            <input type="checkbox" name="" id="" class="in11">Show Password
+                        </td>
+
+                    </tr>
+
+                    <!-- 12th row -->
+                    <tr>
+                        <td class="td12" colspan="2">
+                            <button type="submit" class="btn">Register</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: darkcyan;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            /* background-color: darkcyan; */
+            display: grid;
+            /* grid-template-columns: repeat(4, 100px); */
+            /* grid-auto-flow: dense; */
+            /* grid-auto-flow: column; */
+            /* grid-auto-columns: 100px; */
+            /* grid-auto-rows: 100px; */
+            /* align-items: center;
+            justify-items: center;
+            justify-content: center; */
+            /* grid-template-columns: repeat(5, minmax(50px, 150px)); */
+            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+            grid-template-areas:
+                'valsad valsad surat'
+                'valsad valsad surat';
+
+        }
+
+        .box {
+
+            font-size: 3rem;
+            color: white;
+            padding: 1rem;
+        }
+
+        .box-1 {
+            background-color: crimson;
+            /* grid-column-start: 4; */
+
+        }
+
+        .box-2 {
+            background-color: rgb(139, 0, 139);
+        }
+
+        .box-3 {
+            background-color: darkblue;
+        }
+
+        .box-4 {
+            background-color: darkgreen;
+        }
+
+        .box-5 {
+            background-color: darkkhaki;
+        }
+
+        .box-6 {
+            background-color: darkred;
+        }
+
+        .box-7 {
+            background-color: darkorchid;
+        }
+
+        .box-8 {
+            background-color: darkslategrey;
+        }
+
+        .box-9 {
+            background-color: darkgray;
+        }
+
+        .box-10 {
+            background-color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid</h1>
+
+    <div class="main">
+        <!-- <div class="box-1 box">1</div>
+        <div class="box-2 box">2</div>
+        <div class="box-3 box">3</div>
+        <div class="box-4 box">4</div>
+        <div class="box-5 box">5</div>
+        <div class="box-6 box">6</div>
+        <div class="box-7 box">7</div>
+        <div class="box-8 box">8</div>
+        <div class="box-9 box">9</div>
+        <div class="box-10 box">10</div> -->
+    </div>
+
+</body>
+
+</html>
